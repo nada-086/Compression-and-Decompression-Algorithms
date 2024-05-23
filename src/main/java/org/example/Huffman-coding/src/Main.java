@@ -98,10 +98,13 @@ public class Main {
                     compress(content);
                     long compressionTime = System.nanoTime() - startTime;
                     System.out.println("Total execution time: " + compressionTime / 1000000 + "ms");
-                    System.out.println("Original file size: " + new File(defaultInputFileName).length() + " bytes");
+                    long originalFileSize = new File(defaultInputFileName).length();
+                    System.out.println("Original file size: " + originalFileSize + " bytes");
                     File compressedFile = new File("CompressedFile.txt");
-                    double compressedFileLength = compressedFile.length();
+                    long compressedFileLength = compressedFile.length();
                     System.out.println("Compressed file size: " + compressedFileLength + " bytes\n");
+                    double compressionRatio = (double) originalFileSize / compressedFileLength;
+                    System.out.println("Compression ratio: " + compressionRatio + "\n");
                     break;
 
                 case 2:
