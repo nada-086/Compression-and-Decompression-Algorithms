@@ -3,5 +3,5 @@
 2. LZW coding 
 3. Arithmetic coding
 
-## :tada: :tada: :relaxed: اخر تسليم في الحياة الجامعية
+## اخر تسليم في الحياة الجامعية :tada: :tada: :relaxed:
 
